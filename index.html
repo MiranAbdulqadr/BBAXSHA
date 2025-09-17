@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBAXSHA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="/images/Untitled design.png" alt="Logo" width="50" height="50">
+                </div>
+                <span>BBAXSHA</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Old Clothes, New Hopes</h1>
+            <p>Transform unwanted clothes into hope for those in need</p>
+            <a href="#contact" class="cta-button">Donate Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About BBAXSHA</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>BBAXSHA is more than just a charity organization – we're a bridge between abundance and need. Our mission is simple yet powerful: collecting unwanted clothing from generous donors and ensuring they reach those who need them most.</p>
+                    
+                    <p>Every piece of clothing tells a story, and through BBAXSHA, we give these stories new chapters. We believe that dignity comes not just from having clothes to wear, but from knowing that someone cares enough to share.</p>
+                    
+                    <p>Join us in creating a world where no one has to go without the basic dignity of proper clothing.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/download (1).png" alt="Logo" width="500" height="500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">How We Help</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="20" width="60" height="45" rx="5" fill="white" stroke="white" stroke-width="2"/>
+                            <path d="M25 35 L35 30 L45 30 L55 35 L55 55 L25 55 Z" fill="rgba(74,124,89,0.8)"/>
+                            <path d="M20 35 L25 35 L25 45 L20 45 Z" fill="rgba(74,124,89,0.8)"/>
+                            <path d="M55 35 L60 35 L60 45 L55 45 Z" fill="rgba(74,124,89,0.8)"/>
+                        </svg>
+                    </div>
+                    <h3>Clothing Collection</h3>
+                    <p>We collect unwanted clothes from your home or office. Schedule a pickup and we'll handle the rest with care and respect.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Quality Sorting</h3>
+                    <p>Every donated item is carefully inspected, cleaned, and sorted to ensure only the best reaches those in need.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❤️</div>
+                    <h3>Community Distribution</h3>
+                    <p>We work directly with local communities to identify families and individuals who would benefit most from donations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Our Impact</h2>
+            <div class="impact-stats">
+                <div class="stat">
+                    <div class="stat-number">15,00+</div>
+                    <div class="stat-label">Clothing Items Donated</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Families Helped</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Volunteers Engaged</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Partnerships with NGOs/Charities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="contact-form">
+                <div class="form-header">
+                    <h2>Clothing Donation Form</h2>
+                    <p>Help us make a difference in your community</p>
+                </div>
+
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="male" required>
+                                <span>Male</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="gender" value="female" required>
+                                <span>Female</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Where do you live? <span class="required">*</span></label>
+                        <div class="location-group">
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="erbil" required>
+                                <span>Erbil</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="slemani" required>
+                                <span>Slemani</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="duhok" required>
+                                <span>Duhok</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="halabja" required>
+                                <span>Halabja</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="kirkuk" required>
+                                <span>Kirkuk</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="location" value="other" required>
+                                <span>Other</span>
+                            </label>
+                        </div>
+                        <div class="form-group" id="other-location-group" style="display: none;">
+                            <label for="other-location">Please specify your location:</label>
+                            <textarea id="other-location" name="other_location" placeholder="Enter your location..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What type of clothes are you giving?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="shirt">
+                                <span>Shirt</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="pants">
+                                <span>Pants</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="jackets">
+                                <span>Jackets</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="shoes">
+                                <span>Shoes</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="dress">
+                                <span>Dress</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="clothes_type" value="others">
+                                <span>Others</span>
+                            </label>
+                        </div>
+                        <div class="form-group" id="other-clothes-group" style="display: none;">
+                            <label for="other-clothes">Please specify other clothing types:</label>
+                            <textarea id="other-clothes" name="other_clothes" placeholder="Enter other types of clothes you're donating..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sizes">Sizes</label>
+                        <textarea id="sizes" name="sizes" placeholder="Please list the sizes of the clothes you're donating (e.g., S, M, L, XL, 32, 34, etc.)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>How many pieces of clothes are you willing to give? <span class="required">*</span></label>
+                        <div class="quantity-group">
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="1-5" required>
+                                <span>1-5 pieces</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="6-10" required>
+                                <span>6-10 pieces</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="11-20" required>
+                                <span>11-20 pieces</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="21-50" required>
+                                <span>21-50 pieces</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="50+" required>
+                                <span>50+ pieces</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="quantity" value="not_sure" required>
+                                <span>Not sure yet</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BBAXSHA. All rights reserved. | Spreading hope, one garment at a time.</p>
+        </div>
+    </footer>
+
+    <div class="fab" onclick="scrollToTop()">↑</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
