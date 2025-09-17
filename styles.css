@@ -465,3 +465,44 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .about-text {
+        margin-bottom: 30px;
+        order: 1;
+    }
+    
+    .about-image {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .about-image img {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image img {
+        max-width: 250px !important;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 30px;
+    }
+}
