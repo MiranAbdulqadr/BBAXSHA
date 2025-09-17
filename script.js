@@ -57,7 +57,7 @@ function handleSubmit(event) {
     whatsappMessage += `*Quantity:* ${quantity}\n`;
     
     // Replace with your actual WhatsApp number (including country code, no + sign)
-    const whatsappNumber = '9647511762295'; // Replace this with your actual WhatsApp number
+    const whatsappNumber = '9647511875125'; // Replace this with your actual WhatsApp number
     
     // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
